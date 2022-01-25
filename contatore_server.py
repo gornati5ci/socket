@@ -13,7 +13,7 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
   while fine==False:
     clientsocket, address=s.accept()
     progressivo=1
-    # Il with esegue anche il .close, quindi non serve il comando(che mi dà errore se provo ad usare)
+    # Il with esegue anche il .close, quindi non serve il comando
     with clientsocket as cs:
       print("Connection received from ",address)
       while True:
