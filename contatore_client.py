@@ -13,6 +13,6 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
     print("Ricevuto dal server: ")
     print(data.decode())
     print()
-    if data.decode()=="KO":
+    if data.decode()=="KO" or data.decode()=="KO2":
       print("Sessione terminata")
       break
